@@ -1,10 +1,10 @@
 #!/bin/bash
 echo
-echo " Provide a requiredd package name to installed "
+echo " Provide a required package name to installed "
 read package
 echo
 source /etc/os-release
-echo " The operating system is ;$Name "
+echo " The operating system is ; $Name "
 os=$( awk '{ print$3 }' /etc/os-release | grep fedora | cut -c 1-6 )
 if [ $os =fedora ]; then
 	echo " os is $os "
